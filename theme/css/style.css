@@ -551,15 +551,74 @@ footer a:hover {
     color: white;
 }
 
+/* Mobile Menu Toggle Button */
+.mobile-menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    color: var(--primary-teal);
+    cursor: pointer;
+    padding: 0.5rem;
+    z-index: 1001;
+}
+
+.mobile-menu-toggle:hover {
+    color: var(--secondary-teal);
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
+    /* Compact header for mobile */
+    header {
+        padding: 0.5rem 0;
+    }
+    
     header .header-content {
-        flex-direction: column;
-        text-align: center;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
     }
     
     header .logo-section {
-        flex-direction: column;
+        flex-direction: row;
+        gap: 0.75rem;
+    }
+    
+    header .logo {
+        width: 45px;
+        height: 45px;
+    }
+    
+    header h1 {
+        font-size: 1.1rem;
+    }
+    
+    header .tagline {
+        font-size: 0.7rem;
+    }
+    
+    /* Show hamburger menu button */
+    .mobile-menu-toggle {
+        display: block;
+    }
+    
+    /* Hide nav by default on mobile */
+    nav {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: white;
+        box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease-in-out;
+    }
+    
+    /* Show nav when menu is open */
+    nav.mobile-menu-open {
+        max-height: 500px;
     }
     
     nav ul {
@@ -570,21 +629,32 @@ footer a:hover {
     
     nav li {
         width: 100%;
+        border-bottom: 1px solid var(--border-color);
+    }
+    
+    nav li:last-child {
+        border-bottom: none;
     }
     
     nav a {
         display: block;
         width: 100%;
-        text-align: center;
-        border-bottom: 1px solid var(--border-color);
+        text-align: left;
+        padding: 1rem 1.5rem;
+        font-size: 1rem;
     }
     
-    header h1 {
-        font-size: 1.5rem;
+    nav a::after {
+        display: none;
     }
     
-    .team-grid {
-        grid-template-columns: 1fr;
+    nav a:hover {
+        background: var(--light-bg);
+    }
+    
+    /* Smaller content padding on mobile */
+    .container {
+        padding: 0 1rem;
     }
     
     main {
@@ -592,12 +662,34 @@ footer a:hover {
         margin: 1.5rem auto;
     }
     
+    /* Smaller headings on mobile */
     h1 {
-        font-size: 2rem;
+        font-size: 1.75rem;
     }
     
     h2 {
-        font-size: 1.5rem;
+        font-size: 1.4rem;
+    }
+    
+    h3 {
+        font-size: 1.1rem;
+    }
+    
+    /* Team grid single column */
+    .team-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Tablet adjustments */
+@media (max-width: 1024px) and (min-width: 769px) {
+    header h1 {
+        font-size: 1.3rem;
+    }
+    
+    nav a {
+        padding: 0.6rem 0.8rem;
+        font-size: 0.85rem;
     }
 }
 

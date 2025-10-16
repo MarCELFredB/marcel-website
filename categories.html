@@ -18,7 +18,10 @@
                         <p class="tagline">Swansea University | Marine Conservation Research</p>
                     </div>
                 </div>
-                <nav>
+                <button class="mobile-menu-toggle" aria-label="Toggle menu">
+                    ☰
+                </button>
+                <nav id="main-nav">
                     <ul>
                         <li><a href="https://marcelfRedb.github.io/marcel-website/index.html">About</a></li>
                         <li><a href="https://marcelfRedb.github.io/marcel-website/research.html">Research</a></li>
@@ -44,5 +47,42 @@
             <p>School of Biosciences, Geography and Physics</p>
         </div>
     </footer>
+
+    <script>
+        // Mobile menu toggle
+        document.addEventListener('DOMContentLoaded', function() {
+            const menuToggle = document.querySelector('.mobile-menu-toggle');
+            const nav = document.querySelector('#main-nav');
+            
+            menuToggle.addEventListener('click', function() {
+                nav.classList.toggle('mobile-menu-open');
+                
+                // Change icon
+                if (nav.classList.contains('mobile-menu-open')) {
+                    menuToggle.textContent = '✕';
+                } else {
+                    menuToggle.textContent = '☰';
+                }
+            });
+            
+            // Close menu when clicking on a link
+            const navLinks = nav.querySelectorAll('a');
+            navLinks.forEach(link => {
+                link.addEventListener('click', function() {
+                    nav.classList.remove('mobile-menu-open');
+                    menuToggle.textContent = '☰';
+                });
+            });
+            
+            // Close menu when clicking outside
+            document.addEventListener('click', function(event) {
+                const isClickInside = nav.contains(event.target) || menuToggle.contains(event.target);
+                if (!isClickInside && nav.classList.contains('mobile-menu-open')) {
+                    nav.classList.remove('mobile-menu-open');
+                    menuToggle.textContent = '☰';
+                }
+            });
+        });
+    </script>
 </body>
 </html>
