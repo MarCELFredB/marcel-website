@@ -1,0 +1,629 @@
+/* MarCEL Website - Professional Research Lab Design */
+
+/* Import Professional Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Lora:wght@400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /* Logo-inspired colors */
+    --primary-teal: #2d6f6b;
+    --secondary-teal: #4a9690;
+    --light-teal: #7ab5b0;
+    --accent-sage: #9db5ad;
+    --dark-text: #1a2e2c;
+    --medium-text: #4a5958;
+    --light-bg: #f8fafa;
+    --white: #ffffff;
+    --border-color: #e1e8e7;
+}
+
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    line-height: 1.7;
+    color: var(--dark-text);
+    background-color: var(--light-bg);
+    font-size: 16px;
+}
+
+.container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+/* Header - Professional Academic Style */
+header {
+    background: linear-gradient(to bottom, rgba(255,255,255,0.98), rgba(255,255,255,0.95)), 
+                linear-gradient(135deg, var(--primary-teal) 0%, var(--secondary-teal) 100%);
+    color: var(--dark-text);
+    padding: 0.75rem 0;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+    border-bottom: 3px solid var(--primary-teal);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    backdrop-filter: blur(10px);
+}
+
+header .header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+header .logo-section {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+header .logo {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+}
+
+header .site-title {
+    display: flex;
+    flex-direction: column;
+}
+
+header h1 {
+    font-family: 'Inter', sans-serif;
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin: 0;
+    letter-spacing: -0.02em;
+}
+
+header h1 a {
+    color: var(--primary-teal);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+header h1 a:hover {
+    color: var(--secondary-teal);
+}
+
+header .tagline {
+    color: var(--medium-text);
+    font-size: 0.85rem;
+    font-weight: 500;
+    margin-top: 0.15rem;
+    letter-spacing: 0.02em;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 0;
+    margin: 0;
+}
+
+nav li {
+    margin: 0;
+    white-space: nowrap;
+}
+
+nav a {
+    color: var(--medium-text);
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 0.9rem;
+    padding: 0.6rem 1rem;
+    display: block;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+nav a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 2px;
+    background: var(--primary-teal);
+    transition: all 0.3s ease;
+    transform: translateX(-50%);
+}
+
+nav a:hover {
+    color: var(--primary-teal);
+}
+
+nav a:hover::after {
+    width: 80%;
+}
+
+
+/* Main Content - Clean Academic Layout */
+main {
+    background: var(--white);
+    margin: 3rem auto;
+    padding: 4rem 3rem;
+    border-radius: 0;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+    min-height: 70vh;
+}
+
+/* Typography - Professional & Readable */
+h1 {
+    font-family: 'Lora', serif;
+    color: var(--primary-teal);
+    font-size: 2.75rem;
+    font-weight: 600;
+    margin-bottom: 2rem;
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+}
+
+h2 {
+    font-family: 'Lora', serif;
+    color: var(--primary-teal);
+    font-size: 2rem;
+    font-weight: 600;
+    margin: 3rem 0 1.5rem;
+    line-height: 1.3;
+    letter-spacing: -0.01em;
+}
+
+h3 {
+    font-family: 'Inter', sans-serif;
+    color: var(--secondary-teal);
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin: 2rem 0 1rem;
+    line-height: 1.4;
+}
+
+p {
+    margin-bottom: 1.25rem;
+    color: var(--medium-text);
+    line-height: 1.8;
+}
+
+strong {
+    color: var(--dark-text);
+    font-weight: 600;
+}
+
+a {
+    color: var(--secondary-teal);
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+a:hover {
+    color: var(--primary-teal);
+    text-decoration: underline;
+}
+
+/* Content Sections */
+.content {
+    max-width: 900px;
+}
+
+.home-page h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.home-page h2 {
+    color: var(--secondary-teal);
+    font-size: 1.75rem;
+    margin-top: 3rem;
+}
+
+.home-page h3 {
+    color: var(--dark-text);
+    font-size: 1.3rem;
+    margin-top: 2rem;
+}
+
+
+/* Publications - Academic Journal Style */
+.publications-page h1 {
+    border-bottom: 2px solid var(--border-color);
+    padding-bottom: 1.5rem;
+    margin-bottom: 3rem;
+}
+
+.publications-list {
+    margin-bottom: 4rem;
+}
+
+.publications-list h2 {
+    font-size: 1.5rem;
+    color: var(--primary-teal);
+    border-left: 4px solid var(--primary-teal);
+    padding-left: 1rem;
+    margin: 3rem 0 2rem;
+    font-family: 'Inter', sans-serif;
+}
+
+.publication {
+    background: var(--white);
+    padding: 2rem;
+    margin-bottom: 2rem;
+    border-radius: 4px;
+    border: 1px solid var(--border-color);
+    border-left: 4px solid var(--light-teal);
+    transition: all 0.3s ease;
+}
+
+.publication:hover {
+    border-left-color: var(--primary-teal);
+    box-shadow: 0 4px 12px rgba(45, 111, 107, 0.08);
+    transform: translateX(2px);
+}
+
+.publication.featured {
+    background: linear-gradient(to right, #f8fafa 0%, #ffffff 100%);
+    border-left-color: var(--secondary-teal);
+    border-left-width: 5px;
+}
+
+.publication h3 {
+    color: var(--dark-text);
+    margin: 0 0 1rem 0;
+    font-size: 1.25rem;
+    line-height: 1.5;
+    font-family: 'Lora', serif;
+    font-weight: 600;
+}
+
+.publication .authors {
+    color: var(--medium-text);
+    font-size: 0.95rem;
+    margin: 0.75rem 0;
+    font-weight: 500;
+}
+
+.publication .journal {
+    color: var(--medium-text);
+    margin: 0.75rem 0;
+    font-style: italic;
+    font-size: 0.95rem;
+}
+
+.publication .doi {
+    font-size: 0.9rem;
+    color: var(--medium-text);
+    margin: 0.75rem 0;
+}
+
+.publication .doi a {
+    color: var(--secondary-teal);
+    font-family: 'Courier New', monospace;
+    font-size: 0.85rem;
+}
+
+.publication .pdf-link {
+    display: inline-block;
+    background: var(--primary-teal);
+    color: white;
+    padding: 0.6rem 1.5rem;
+    border-radius: 4px;
+    margin-top: 1rem;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+}
+
+.publication .pdf-link:hover {
+    background: var(--secondary-teal);
+    text-decoration: none;
+    transform: translateY(-1px);
+    box-shadow: 0 2px 8px rgba(45, 111, 107, 0.2);
+}
+
+.publication .tags {
+    margin-top: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.publication .tag {
+    display: inline-block;
+    background: var(--light-bg);
+    color: var(--primary-teal);
+    padding: 0.3rem 0.8rem;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 500;
+    border: 1px solid var(--border-color);
+}
+
+
+/* Team - Professional Profile Cards */
+.team-page h1 {
+    border-bottom: 2px solid var(--border-color);
+    padding-bottom: 1.5rem;
+    margin-bottom: 3rem;
+}
+
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 2.5rem;
+    margin-top: 3rem;
+}
+
+.team-member {
+    background: var(--white);
+    padding: 2rem;
+    border-radius: 4px;
+    text-align: center;
+    transition: all 0.3s ease;
+    border: 1px solid var(--border-color);
+}
+
+.team-member:hover {
+    box-shadow: 0 6px 20px rgba(45, 111, 107, 0.1);
+    transform: translateY(-4px);
+    border-color: var(--light-teal);
+}
+
+.team-photo {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 0 auto 1.5rem;
+    border: 4px solid var(--primary-teal);
+    box-shadow: 0 4px 12px rgba(45, 111, 107, 0.15);
+}
+
+.team-member h3 {
+    color: var(--primary-teal);
+    margin: 0 0 0.5rem 0;
+    font-size: 1.4rem;
+    font-family: 'Lora', serif;
+}
+
+.team-member .role {
+    color: var(--secondary-teal);
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    font-size: 0.95rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.team-member .bio {
+    text-align: left;
+    color: var(--medium-text);
+    font-size: 0.95rem;
+    line-height: 1.7;
+    margin-bottom: 1.5rem;
+}
+
+.team-member .contact {
+    font-size: 0.9rem;
+    padding-top: 1rem;
+    border-top: 1px solid var(--border-color);
+}
+
+.team-member .contact a {
+    color: var(--secondary-teal);
+}
+
+.team-member .links {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.team-member .links a {
+    padding: 0.5rem 1rem;
+    background: var(--light-bg);
+    border-radius: 4px;
+    font-size: 0.85rem;
+    transition: all 0.2s ease;
+    border: 1px solid var(--border-color);
+}
+
+.team-member .links a:hover {
+    background: var(--primary-teal);
+    color: white;
+    text-decoration: none;
+    border-color: var(--primary-teal);
+}
+
+
+/* News & Articles - Clean Blog Style */
+.featured-news {
+    margin-top: 4rem;
+    padding-top: 3rem;
+    border-top: 2px solid var(--border-color);
+}
+
+.featured-news h2 {
+    color: var(--primary-teal);
+    margin-bottom: 2rem;
+}
+
+.news-preview, .articles-list {
+    margin-top: 2rem;
+}
+
+.news-item, .article-item {
+    background: var(--white);
+    padding: 2rem;
+    margin-bottom: 2rem;
+    border-radius: 4px;
+    border: 1px solid var(--border-color);
+    border-left: 4px solid var(--light-teal);
+    transition: all 0.3s ease;
+}
+
+.news-item:hover, .article-item:hover {
+    border-left-color: var(--primary-teal);
+    box-shadow: 0 4px 12px rgba(45, 111, 107, 0.08);
+    transform: translateX(2px);
+}
+
+.news-item h3, .article-item h2 {
+    margin: 0 0 0.75rem 0;
+    font-family: 'Lora', serif;
+}
+
+.news-item h3 a, .article-item h2 a {
+    color: var(--dark-text);
+    text-decoration: none;
+}
+
+.news-item h3 a:hover, .article-item h2 a:hover {
+    color: var(--primary-teal);
+}
+
+.news-item .date, .article-item .date {
+    color: var(--medium-text);
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+    font-weight: 500;
+}
+
+.news-item p, .article-item .summary {
+    color: var(--medium-text);
+    line-height: 1.7;
+}
+
+.more-link, .read-more {
+    color: var(--secondary-teal);
+    font-weight: 600;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 1rem;
+    transition: all 0.2s ease;
+}
+
+.more-link:hover, .read-more:hover {
+    color: var(--primary-teal);
+    transform: translateX(4px);
+}
+
+.back-link {
+    display: inline-block;
+    margin-top: 2rem;
+    color: var(--secondary-teal);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.back-link:hover {
+    color: var(--primary-teal);
+}
+
+/* Footer - Clean & Minimal */
+footer {
+    background: var(--dark-text);
+    color: rgba(255, 255, 255, 0.8);
+    padding: 3rem 0;
+    text-align: center;
+    margin-top: 4rem;
+    border-top: 3px solid var(--primary-teal);
+}
+
+footer p {
+    margin: 0.5rem 0;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+footer a {
+    color: var(--light-teal);
+}
+
+footer a:hover {
+    color: white;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header .header-content {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    header .logo-section {
+        flex-direction: column;
+    }
+    
+    nav ul {
+        flex-direction: column;
+        gap: 0;
+        width: 100%;
+    }
+    
+    nav li {
+        width: 100%;
+    }
+    
+    nav a {
+        display: block;
+        width: 100%;
+        text-align: center;
+        border-bottom: 1px solid var(--border-color);
+    }
+    
+    header h1 {
+        font-size: 1.5rem;
+    }
+    
+    .team-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    main {
+        padding: 2rem 1.5rem;
+        margin: 1.5rem auto;
+    }
+    
+    h1 {
+        font-size: 2rem;
+    }
+    
+    h2 {
+        font-size: 1.5rem;
+    }
+}
+
+/* Utility Classes */
+.text-center {
+    text-align: center;
+}
+
+.mt-1 { margin-top: 0.5rem; }
+.mt-2 { margin-top: 1rem; }
+.mt-3 { margin-top: 1.5rem; }
+.mt-4 { margin-top: 2rem; }
+
+.mb-1 { margin-bottom: 0.5rem; }
+.mb-2 { margin-bottom: 1rem; }
+.mb-3 { margin-bottom: 1.5rem; }
+.mb-4 { margin-bottom: 2rem; }
+
+/* Print Styles */
+@media print {
+    header, footer, nav {
+        display: none;
+    }
+    
+    main {
+        margin: 0;
+        box-shadow: none;
+    }
+}

@@ -1,0 +1,27 @@
+team:
+- name: Dr Nicole Esteban
+  role: Principal Investigator / Associate Professor
+  email: n.esteban@swansea.ac.uk
+  bio: Nicole leads the Marine Conservation Ecology Lab with 20+ years of experience
+    in tropical coastal ecosystems and integrated coastal zone management. Her research
+    focuses on spatial and habitat use by marine fauna, particularly sea turtles and
+    fisheries. She has extensive experience managing Marine Parks and National Parks
+    in the Caribbean, and her current work spans the Indian Ocean, Caribbean, Red
+    Sea, Mediterranean, and locally in Swansea Bay.
+  photo: images/team/nicole-esteban.jpg
+  website: ''
+  scholar: https://scholar.google.com/citations?user=GL0dv2kAAAAJ
+  twitter: https://twitter.com/EstebanNicole
+  linkedin: ''
+  order: 1
+- name: Fred Baggs
+  role: phd student
+  email: f.l.baggs@swansea.ac.uk
+  bio: 'Safeguarding Sea Turtle Nests from Climate Change: An Irrigation Framework
+    to Reduce Incubation Temperatures'
+  photo: images/team/placeholder.jpg
+  website: ''
+  scholar: ''
+  twitter: ''
+  linkedin: https://www.linkedin.com/in/fred-baggs-00769b289/
+  order: 2

@@ -1,0 +1,49 @@
+# Publications for MarCEL
+# Add new publications in this format - no coding required!
+# Just copy the template below and fill in your details
+
+publications:
+  - title: "Long-distance migration of sea turtles: tracking movements across ocean basins"
+    authors: "Esteban, N., Mortimer, J.A., Hays, G.C."
+    year: 2024
+    journal: "Marine Ecology Progress Series"
+    volume: "645"
+    pages: "1-18"
+    doi: "10.3354/meps13456"
+    pdf_url: "https://example.com/paper1.pdf"
+    tags: ["sea turtles", "migration", "tracking"]
+    featured: true
+    
+  - title: "Discovery of deep-water seagrass meadows in the Bristol Channel"
+    authors: "Esteban, N., Smith, J., Jones, P."
+    year: 2024
+    journal: "Nature Communications"
+    volume: "15"
+    pages: "234"
+    doi: "10.1038/s41467-024-12345-6"
+    pdf_url: ""
+    tags: ["seagrass", "conservation", "habitat"]
+    featured: true
+    
+  - title: "Spatial ecology of reef fish in Marine Protected Areas"
+    authors: "Jones, P., Esteban, N."
+    year: 2023
+    journal: "Coral Reefs"
+    volume: "42"
+    pages: "567-580"
+    doi: "10.1007/s00338-023-12345-6"
+    pdf_url: ""
+    tags: ["fish", "MPA", "reef ecology"]
+    featured: false
+
+# Template for adding new publications:
+# - title: "Your paper title here"
+#   authors: "LastName, F., LastName, F., LastName, F."
+#   year: 2024
+#   journal: "Journal Name"
+#   volume: "10"
+#   pages: "1-20"
+#   doi: "10.xxxx/xxxxx"
+#   pdf_url: "https://link-to-pdf-if-available.com"
+#   tags: ["keyword1", "keyword2"]
+#   featured: false

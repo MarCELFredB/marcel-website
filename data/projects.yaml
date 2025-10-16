@@ -1,0 +1,54 @@
+# MarCEL Research Projects
+# Add new research projects here
+
+projects:
+  - title: "Sea Turtle Migration and Conservation"
+    description: "Long-term tracking of sea turtle movements across ocean basins to inform conservation strategies and Marine Protected Area design. Our work spans multiple species and locations globally."
+    location: "Indian Ocean, Caribbean, Mediterranean, Red Sea"
+    status: "Active"
+    start_year: 2015
+    image: "images/projects/turtle-tracking.jpg"
+    funding: "NERC, Swansea University"
+    collaborators: ["University of Exeter", "Marine Conservation Society"]
+    order: 1
+    
+  - title: "Deep-Water Seagrass Meadow Discovery"
+    description: "Discovery and characterization of previously unknown deep-water seagrass meadows in Welsh waters. Understanding their ecological role and contribution to blue carbon storage."
+    location: "Bristol Channel, Wales"
+    status: "Active"
+    start_year: 2020
+    image: "images/projects/seagrass.jpg"
+    funding: "Welsh Government, SEACAMS2"
+    collaborators: ["Natural Resources Wales"]
+    order: 2
+    
+  - title: "Mesophotic Reef Ecology"
+    description: "Exploring mesophotic coral reef ecosystems and their importance for biodiversity conservation and fisheries."
+    location: "Global"
+    status: "Active"
+    start_year: 2018
+    image: "images/projects/reef.jpg"
+    funding: "Royal Society"
+    collaborators: ["International partners"]
+    order: 3
+    
+  - title: "Fish Spatial Ecology in MPAs"
+    description: "Understanding how fish use space within Marine Protected Areas to optimize conservation planning and management strategies."
+    location: "Bristol Channel, Wales"
+    status: "Active"
+    start_year: 2019
+    image: "images/projects/fish-mpa.jpg"
+    funding: "NERC"
+    collaborators: ["Swansea University Geography"]
+    order: 4
+
+# Template for new projects:
+# - title: "Project Name"
+#   description: "Detailed description of the project aims and approach"
+#   location: "Where the research takes place"
+#   status: "Active/Completed"
+#   start_year: 2024
+#   image: "images/projects/filename.jpg"
+#   funding: "Funding source"
+#   collaborators: ["Partner 1", "Partner 2"]
+#   order: 5
